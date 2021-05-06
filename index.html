@@ -14,6 +14,24 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!--navbar starting-->
+    <span class="nav-btn" id="nav-btn">
+      <i class="fas fa-bars"></i>
+    </span>
+    <nav class="navbar" id="navbar">
+      <div class="navbar-header">
+        <span class="nav-close" id="nav-close">
+          <i class="fas fa-times"></i>
+        </span>
+      </div>
+      <ul class="nav-items">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="skills.html" class="nav-link">skills</a></li>
+        <li><a href="about.html" class="nav-link">about</a></li>
+        <li><a href="products.html" class="nav-link">products</a></li>
+      </ul>
+    </nav>
+    <!--nav-bar ending-->
     <header class="header">
       <div class="banner">
         <h2>Over one hundred falvours of</h2>
@@ -56,27 +74,6 @@
       </article>
     </section>
     <!--end of skills section-->
-
-    <!--start of about section-->
-    <section>
-      <div class="section-center clearfix">
-        <article class="about-img">
-          <div class="about-picture-container">
-            <img src="./images/about-bcg.jpeg" alt="about img" class="about-picture"/>
-          </div>
-        </article>
-        <article class="about-info">
-          <div class="section-title">
-            <h3>About our</h3>
-            <h2>tea station</h2>
-          </div>
-          <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, omnis.</p>
-          <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, rerum.</p>
-          <a href="about.html" class="btn">Learn more</a>
-        </article>
-      </div>
-    </section>
-    <!--end of about section-->
     <!--start of products section-->
     <section class="products">
       <div class="section-center clearfix">
@@ -204,14 +201,33 @@
             <div class="form-group">
               <input type="text" placeholder="name" value="" class="form-control" name="name"/>
               <input type="email" placeholder="email" value="" name="email" class="form-control">
-              <textarea name="message" class="form-control" rows="10"></textarea>
+              <textarea name="message" placeholder="description" class="form-control" rows="10"></textarea>
             </div>
-            <button type="submit" class="submit-btn btn"></button>
+            <button type="submit" class="submit-btn btn">send</button>
           </form>
         </article>
       </div>
     </section>
     <!--end of contact section-->
+    <footer class="footer">
+      <div class="section-center">
+        <div class="social-icons">
+          <a href="#" class="social-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <h4 class="footer-text">
+          &copy; <span id="date">2020</span> <span>tea station</span>
+          all rights reserved
+        </h4>
+      </div>
+    </footer>
     </div>
     <!-- YOUR CODE GOES HERE -->
     <script src="app.js"></script>
